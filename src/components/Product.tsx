@@ -15,7 +15,7 @@ export function Product({ product }: ProductProps) {
     <div className="border py-2 px-4 rounded flex flex-col items-center mb-2">
       <img src={product.image} className="w-1/6" alt={product.title}></img>
       <p>{product.title}</p>
-      <span className="font-bold">{product.price}</span>
+      <span className="font-bold">{product.price} USD</span>
       <button className={btnClasses.join(' ')} onClick={() => setDetails(!details)}>
         {details ? 'Hide Details' : 'Show Details'}
       </button>
